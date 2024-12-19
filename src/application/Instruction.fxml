@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="600.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" vvalue="0.59" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <content>
+      <AnchorPane fx:id="foundation" prefHeight="1400.0" prefWidth="596.0">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="148.0" layoutX="141.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../delete.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="titlelabel" alignment="CENTER" layoutX="193.0" layoutY="49.0" prefHeight="17.0" prefWidth="322.0" text="Delete My Mail">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="header" alignment="CENTER" layoutX="-1.0" layoutY="150.0" prefHeight="17.0" prefWidth="588.0" text="Using Google App Passwords">
+               <font>
+                  <Font name="Lucida Console" size="26.0" />
+               </font></Label>
+            <TextArea fx:id="textarea" editable="false" layoutX="1.0" layoutY="187.0" prefHeight="130.0" prefWidth="584.0" text="In today's digital age, security is paramount when it comes to accessing your online &#10;accounts.Google provides a powerful security feature known as App Passwords, &#10;which offers enhanced protection for your Google account while grantingsecure &#10;access to third-party apps. In this guide, we'll explore the benefits of using Google&#10;App Passwords and provide step-by-step instructions on how to create one.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="header" alignment="CENTER" layoutX="7.0" layoutY="329.0" prefHeight="17.0" prefWidth="588.0" text="Benefits of Google App Passwords">
+               <font>
+                  <Font name="Lucida Console" size="26.0" />
+               </font></Label>
+            <TextArea fx:id="textarea" editable="false" layoutX="1.0" layoutY="366.0" prefHeight="180.0" prefWidth="584.0" text="1.Enhanced Security: App passwords act as an extra layer of security for your Google&#10;   account. They allow you to grant access to specific apps without exposing your &#10;   main Google account password. This means that even if a third-party app is &#10;   compromised, your main account remains secure.&#10;&#10;2.Application-Specific Access: With app passwords, you can control exactly which &#10;   app has access to your Google account. This prevents unauthorized access to &#10;   otherapps or services linked to your Google account.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="header" alignment="CENTER" layoutX="3.0" layoutY="559.0" prefHeight="17.0" prefWidth="593.0" text="How To Create A Google App Password">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+            <TextArea fx:id="textarea" editable="false" layoutX="2.0" layoutY="597.0" prefHeight="540.0" prefWidth="582.0" text="Creating a Google App Password is a straightforward process. Follow these steps &#10;to generate an app password:&#10;&#10;1.Go to your Google Account settings: Start by logging in to your Google Account.&#10; Navigate to your account settings by clicking on your profile picture and selecting&#10;&quot;Google Account.&quot;&#10;&#10;2.Access App Passwords: In the left-hand menu, click on &quot;Security.&quot; Under the &#10;&quot;Signing in to Google&quot; section, you'll find &quot;App passwords.&quot; Click on it to proceed.&#10;&#10;3.Sign in Again (if prompted): For security reasons, Google mightask you to sign&#10; inagain at this point. Simply follow the prompts to sign in to your account.&#10;&#10;4.Choose the App and Device: You'll now see a list of apps and devices that can &#10;useapp passwords. Select the app and device for which you want to generate the &#10;app password.&#10;&#10;5.Generate the App Password: Click on the &quot;Select app&quot; dropdownand choose the &#10;appropriate appcategory. Then, click on the &quot;Select device&quot; dropdown and choose&#10;the relevant device. Once done,click &quot;Generate&quot; to create the app password.&#10;&#10;6.Use the App Password: Google will generate a unique app password for the &#10;selectedapp and device. This password is what you'll use to sign in to the app. Make&#10; sure to copy and store this password in a secure place, as you won't be able to see&#10;it again.">
+               <font>
+                  <Font size="15.0" />
+               </font></TextArea>
+            <Button fx:id="back" layoutX="3.0" layoutY="15.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="46.0" text="⇇" textFill="#fcfcfc">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="important" alignment="CENTER" layoutX="3.0" layoutY="1155.0" prefHeight="17.0" prefWidth="593.0" text="IMPORTANT">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textarea" editable="false" layoutX="1.0" layoutY="1193.0" prefHeight="180.0" prefWidth="584.0" text="1.Enhanced Security: App passwords act as an extra layer of security for your Google&#10;   account. They allow you to grant access to specific apps without exposing your &#10;   main Google account password. This means that even if a third-party app is &#10;   compromised, your main account remains secure.&#10;&#10;2.Application-Specific Access: With app passwords, you can control exactly which &#10;   app has access to your Google account. This prevents unauthorized access to &#10;   otherapps or services linked to your Google account.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

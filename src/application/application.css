@@ -1,0 +1,98 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#foundation
+{
+	
+	-fx-background-color:"black";
+}
+
+#loginPanel
+{
+	-fx-background-color:"black";
+	
+}
+.label
+{
+	-fx-font-size:1.1em;
+	-fx-font-family:"Lucida Console";
+	-fx-alignment:center;
+	-fx-text-fill:white;
+	
+}
+#warning
+{
+	-fx-text-fill:red;
+	-fx-font-size:1.3em;
+	
+	
+}
+#background
+{
+	-fx-background-color:black;
+	
+}
+#titlelabel
+{
+	
+	-fx-text-fill:white;
+	-fx-font-size:32;
+}
+#instructionlabel
+{
+	-fx-font-size:20;
+	
+}
+
+#deleteLabel
+{
+	-fx-font-size:20;
+}
+#button1
+{
+	-fx-text-fill:white;
+	-fx-background-color:blue;
+	-fx-font-size: 12px;
+	-fx-font-family:"Lucida Console";
+}
+/* styles.css */
+#back {
+    -fx-text-fill: white;
+    -fx-background-color: transparent; /* Set the background color to transparent */
+    -fx-font-size: 40px;
+    -fx-font-family: "Lucida Console";
+    -fx-border-color: none;
+}
+#header
+{
+    -fx-font-size: 20px;
+    -fx-font-family: system;
+	 -fx-text-fill: white;
+	 -fx-background-color: black;
+	 
+    
+   
+}
+#textarea
+{
+	-fx-font-size: 15px;
+    -fx-font-family: system;
+	
+	
+
+	-fx-background-color: black;
+    
+}
+#important
+{
+    -fx-font-size: 20px;
+    -fx-font-family: system;
+	 -fx-text-fill: red;
+	 -fx-background-color: black;
+	 
+    
+   
+}
+
+
+
+
+

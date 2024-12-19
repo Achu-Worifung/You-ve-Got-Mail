@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<ScrollPane fitToHeight="true" maxHeight="-Infinity" maxWidth="600.0" minHeight="600.0" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Table">
+   <content>
+      <TableView fx:id="tableView" fixedCellSize="50.0">
+        <columns>
+          <TableColumn fx:id="Emailheader" prefWidth="200.0" text="Email Header" />
+          <TableColumn fx:id="sent_date" prefWidth="200.0" text="Sent Date" />
+            <TableColumn fx:id="subject" prefWidth="200.0" text="Email Subject" />
+        </columns>
+      </TableView>
+   </content>
+</ScrollPane>

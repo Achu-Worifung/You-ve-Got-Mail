@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="foundation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="149.0" prefHeight="17.0" prefWidth="600.0" text="Email Adress" />
+      <TextField fx:id="email" alignment="CENTER" layoutX="226.0" layoutY="187.0" promptText="email@address.com" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="240.0" prefHeight="17.0" prefWidth="600.0" text="Google Password" />
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="226.0" layoutY="275.0" promptText="Password" />
+      <Label layoutX="443.0" layoutY="333.0" text="To:" />
+      <Label layoutX="124.0" layoutY="333.0" text="From:" />
+      <DatePicker fx:id="to" layoutX="364.0" layoutY="364.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </DatePicker>
+      <DatePicker fx:id="from" layoutX="52.0" layoutY="364.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </DatePicker>
+      <Button fx:id="deleteButton" layoutX="244.0" layoutY="494.0" mnemonicParsing="false" onAction="#onClick" prefHeight="25.0" prefWidth="112.0" text="Delete Mail" textFill="#f50707">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="warning" alignment="CENTER" layoutX="-3.0" layoutY="562.0" prefHeight="17.0" prefWidth="606.0" text="WARNING: THIS PROCESS CANNOT BE UNDONE." textFill="#ee0707" />
+      <ImageView fitHeight="91.0" fitWidth="148.0" layoutX="143.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../delete.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titlelabel" alignment="CENTER" layoutX="189.0" layoutY="59.0" prefHeight="17.0" prefWidth="322.0" text="Delete My Mail">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutY="16.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="46.0" text="⇇" textFill="#fcfcfc">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
