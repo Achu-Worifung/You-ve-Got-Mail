@@ -66,4 +66,9 @@ The application connects to Gmail using IMAP. Make sure your Gmail account allow
 - **App Passwords**: If you use two-factor authentication, ensure that you're using an App Password rather than your regular Gmail password.
 
 ## Screenshots
+![deletemyMail](https://github.com/user-attachments/assets/9022b982-3582-44d2-b24c-8e6479b1fdd4)
+![Screenshot 2024-12-19 010842](https://github.com/user-attachments/assets/e4dbb8ed-0cb8-4274-abf2-ab363e9df685)
+![Screenshot 2024-12-19 010628](https://github.com/user-attachments/assets/21f4194b-e585-4398-87d4-4ca0da13b730)
+![deletemyMailmenu](https://github.com/user-attachments/assets/2ca887c0-ca0b-4e9a-9f2c-cc03f7685bcb)
+![deletemymailInstructions](https://github.com/user-attachments/assets/4e1ec7dd-cc37-4491-b14f-d18817505315)
 
