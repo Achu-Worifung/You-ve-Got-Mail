@@ -41,8 +41,7 @@ Before running the application, ensure that you have the following installed:
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/YouGotMail.git
-cd YouGotMail
+git clone https://github.com/yourusername/YouGotMail.git](https://github.com/Achu-Worifung/You-ve-Got-Mail.git)
 ```
 
 ## Adding JAR Dependencies
