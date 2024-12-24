@@ -1,8 +1,6 @@
-Sure! Here's the updated README with the "Building the Application" section removed:
 
----
 
-# YouGotMail - Email Deletion Application
+## YouGotMail - Email Deletion Application
 
 **YouGotMail** is a JavaFX application that allows users to delete emails from their inbox within a specific date range. The application connects to a Gmail account using IMAP and provides an interface for selecting the range of emails to be deleted based on the date. The user can enter their credentials and the range for email deletion.
 
@@ -38,16 +36,15 @@ Before running the application, ensure that you have the following installed:
      - [activation-1.1.1.jar](https://mvnrepository.com/artifact/jakarta.activation/jakarta.activation-api/2.1.3)
      - [javax.mail-1.6.2.jar](https://mvnrepository.com/artifact/javax.mail/javax.mail-api)
 
-### Clone the Project
+## Clone the Project
 
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/YouGotMail.git
-cd YouGotMail
+git clone https://github.com/yourusername/YouGotMail.git](https://github.com/Achu-Worifung/You-ve-Got-Mail.git)
 ```
 
-### Adding JAR Dependencies
+## Adding JAR Dependencies
 
 You need to include the necessary JAR files for JavaMail and Jakarta Activation:
 
@@ -61,11 +58,16 @@ The application connects to Gmail using IMAP. Make sure your Gmail account allow
 1. Enter your **Gmail Email** and **Password** when prompted.
 2. Select the date range (From and To) for the emails you wish to delete.
 
-### Troubleshooting
+## Troubleshooting
 
 - **`java.lang.ClassNotFoundException: javafx.application.Application`**: This indicates that JavaFX is not configured correctly. Ensure that you have added the JavaFX SDK to your project and set it up properly in your IDE or via the classpath.
 - **Gmail IMAP Issues**: Ensure your Gmail account settings allow IMAP access and that you have the correct permissions to access your email programmatically.
 - **App Passwords**: If you use two-factor authentication, ensure that you're using an App Password rather than your regular Gmail password.
 
-### Screenshots
-![alt text](deletemyMail.png)![alt text](<Screenshot 2024-12-19 010842.png>)![alt text](deletemyMailmenu.png)
+## Screenshots
+![deletemyMail](https://github.com/user-attachments/assets/9022b982-3582-44d2-b24c-8e6479b1fdd4)
+![Screenshot 2024-12-19 010842](https://github.com/user-attachments/assets/e4dbb8ed-0cb8-4274-abf2-ab363e9df685)
+![Screenshot 2024-12-19 010628](https://github.com/user-attachments/assets/21f4194b-e585-4398-87d4-4ca0da13b730)
+![deletemyMailmenu](https://github.com/user-attachments/assets/2ca887c0-ca0b-4e9a-9f2c-cc03f7685bcb)
+![deletemymailInstructions](https://github.com/user-attachments/assets/4e1ec7dd-cc37-4491-b14f-d18817505315)
+

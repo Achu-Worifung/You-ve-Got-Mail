@@ -19,6 +19,7 @@ public class DeleteMail {
     private int count;
     private LocalDate to, from;
     private String email, password;
+    private BinarySearch search;
 
     public LocalDate getTo() {
 		return to;
@@ -69,6 +70,7 @@ public class DeleteMail {
     public void deleateMyMail() {
         Store store = null;
         Folder inbox = null;
+        search = new BinarySearch();
         
         try {
             String userEmail = email;
@@ -108,30 +110,37 @@ public class DeleteMail {
             Date toDate = Date.from(to.atStartOfDay(ZoneId.systemDefault()).toInstant());
 
             Message[] messages = inbox.getMessages();
-
-            for (Message message : messages) {
-                Date messageDate = message.getSentDate();
-                
-                if (messageDate != null) {
-                    // Debug print to see what dates we're comparing
-                    System.out.println("Message date: " + messageDate + 
-                                       " | Is after " + fromDate + ": " + messageDate.after(fromDate) +
-                                       " | Is before " + toDate + ": " + messageDate.before(toDate));
-                    
-                    // Check if the message is within the deletion range
-                    if (messageDate.after(fromDate) && messageDate.before(toDate)) {
-                        message.setFlag(Flags.Flag.DELETED, true);
-                        count++;
-                        System.out.println("Marked for deletion: " + message.getSubject() + 
-                                           " | Date: " + messageDate);
-                    }
-                    // If we've passed the range and the message is after the 'from' date, stop further processing
-                    else if (messageDate.after(toDate)) {
-                        System.out.println("Passed the deletion range. Stopping deletion.");
-                        break; // Stop processing further messages
-                    }
-                }
+            
+            int startIndex = search.binarySearch(from ,to, messages);
+            
+            if (startIndex == -1)
+            {
+            	System.out.println("here is the starting index :"+ startIndex);
+            	// Show success alert
+                Alert alert = new Alert(AlertType.INFORMATION);
+                alert.setTitle("E-Mail DELETED");
+                alert.setHeaderText("YOUR EMAILS HAVE BEEN DELETED");
+                alert.setContentText("No email has been deleted to due no email being recieved during date range.");
+                alert.show();
+                return;
             }
+            else 
+            {
+            	System.out.println("here is the starting index :"+ startIndex);
+            	Date msgDate = messages[startIndex].getSentDate();
+            	while(msgDate.after(fromDate) && msgDate.before(toDate))
+            	{
+            		messages[startIndex].setFlag(Flags.Flag.DELETED, true);
+                    count++;
+                    System.out.println("Marked for deletion: " + messages[startIndex].getSubject() + 
+                                       " | Date: " + msgDate);
+                    startIndex ++;
+                    msgDate = messages[startIndex].getSentDate();
+            	}
+            	System.out.println("Passed the deletion range. Stopping deletion.");
+            }
+
+            
 
 
             // Show success alert
