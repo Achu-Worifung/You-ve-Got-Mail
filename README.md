@@ -11,6 +11,24 @@
 - **Date Selection**: Use a graphical date picker to select the "From" and "To" dates for email deletion.
 - **Warning System**: Before proceeding with email deletion, a warning is shown that the process cannot be undone.
 
+## Technical Details
+
+### Binary Search Optimization
+
+The application uses a modified binary search algorithm to optimize the email deletion process:
+
+- **Smart Starting Point**: Uses binary search to quickly locate either:
+  - The exact starting date in the range, or
+  - The closest date within the specified range
+- **Efficient Processing**: Once the starting point is found, the application:
+  - Deletes emails sequentially from that point
+  - Continues until reaching emails beyond the target end date
+  - This approach avoids unnecessary scanning of emails outside the target range
+- **Performance Benefits**: 
+  - Eliminates the need to scan through older emails
+  - Particularly efficient when deleting recent emails from large inboxes
+  - Reduces initial search time from O(n) to O(log n)
+
 ## Requirements
 
 - **Java 11 or higher** (as JavaFX is no longer bundled with JDK).
